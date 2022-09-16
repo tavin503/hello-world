@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="hello-worldFlow" doc:id="6036d786-6adf-425e-90da-e37ff9044282" >
+		<scheduler doc:name="Scheduler" doc:id="2855cb8b-56cb-4055-969c-d35c276d92a0" >
+			<scheduling-strategy >
+				<fixed-frequency frequency="10" timeUnit="MINUTES"/>
+			</scheduling-strategy>
+		</scheduler>
+		<logger level="INFO" doc:name="Logger" doc:id="5010e54a-05b9-4aec-b865-101fea79f49b" message="start"/>
+		<set-payload value='#["hello world"]' doc:name="Set Payload" doc:id="2fdc0f86-84a6-4621-9f6b-16983352ede3" />
+		<logger level="INFO" doc:name="Logger" doc:id="cba73589-93ef-4c02-9a67-895af0d7a14b" message="end"/>
+	</flow>
+</mule>
