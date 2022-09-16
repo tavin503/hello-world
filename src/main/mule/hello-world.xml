@@ -13,5 +13,6 @@
 		<set-payload value='#["hello world"]' doc:name="Set Payload" doc:id="2fdc0f86-84a6-4621-9f6b-16983352ede3" />
 		<logger level="INFO" doc:name="Logger" doc:id="cba73589-93ef-4c02-9a67-895af0d7a14b" message="end"/>
 		<logger level="INFO" doc:name="Logger" doc:id="04d1b960-0e91-4acf-8091-9541161a5012" message="end2"/>
+		<logger level="INFO" doc:name="Logger" doc:id="b909989a-8777-4123-af09-9570bdfa6776" message="end3"/>
 	</flow>
 </mule>
